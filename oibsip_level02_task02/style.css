@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+/* navbar */
+.topnav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+  background-color: #3c366b;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  text-decoration: none;
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #423d61;
+  color: white;
+}
+
+
+/* movies */
+#movies {
+  max-width: 100%;
+  width: 100%;
+  height: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  color: #3c366b;
+}
+
+.row {
+  display: flex;
+  overflow: hidden;
+}
+
+.imagegroup {
+  display: flex;
+  width: 250px;
+}
+
+.imagegroup img {
+  flex-shrink: 0;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+.imagegroup {
+  animation: travel 20s ease-in-out infinite;
+}
+
+@keyframes travel {
+
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+/* title headings */
+
+.promo-title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 70px;
+}
+
+h3 {
+  color: #3c366b;
+  text-decoration: underline;
+  margin: 10px 0px;
+  padding: 10px 0px;
+}
+
+#life {
+  padding: 20px;
+  color: #3c366b;
+}
+
+/* buttons */
+.btn-primary {
+  align-items: center;
+  box-shadow: none !important;
+  padding: 8px 20px;
+  border-radius: 2px !important;
+  border: 1px solid #423d61 !important;
+  color: #fff !important;
+  background-color: #3c366b !important;
+}
+
+.btn-primary:hover {
+  background: #423d61 !important;
+  color: #fff !important;
+  border: 2px solid #3c366b !important;
+}
